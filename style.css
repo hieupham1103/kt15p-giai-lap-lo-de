@@ -1,5 +1,7 @@
+@font-face { font-family: comic-sans; src: url("font.ttf"); } 
+
 h1 {
-    font-family: Arial;
+    font-family: comic-sans;
     color: black;
     text-shadow: 2px 0 #fff, -2px 0 #fff, 0 2px #fff, 0 -2px #fff,
     1px 1px #fff, -1px -1px #fff, 1px -1px #fff, -1px 1px #fff;
@@ -8,7 +10,7 @@ h1 {
 }
 
 p {
-    font-family: Arial;
+    font-family: comic-sans;
 }
 
 .grid-container {
@@ -51,7 +53,7 @@ p {
 }
 
 .button {
-    font-family: Arial;
+    font-family: comic-sans;
     margin: auto;
     width: 100px;
     height: 50px;
@@ -121,6 +123,8 @@ body {
     /* background-color: rgb(47, 47, 47); */
     background-image: url("images/bg.png");
 }
+
+
 header {
     text-align: center;
     background-color: black;
