@@ -12,8 +12,7 @@ function dice() {
     count_dice++;
     if (count_dice >= limit_dice){
         document.getElementById('dungnghiennua').style.display = "block";
-        alert("bạn đã xóc quá nhiều, nghỉ thôi :(")
-        return;
+        alert("bạn đã chơi quá nhiều, nghỉ thôi :(")
     }
     var b = random(6);
     var a = random(6);

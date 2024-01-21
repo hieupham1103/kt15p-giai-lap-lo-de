@@ -1,7 +1,10 @@
 h1 {
     font-family: Arial;
-    color: rgb(241, 20, 20);
+    color: black;
+    text-shadow: 2px 0 #fff, -2px 0 #fff, 0 2px #fff, 0 -2px #fff,
+    1px 1px #fff, -1px -1px #fff, 1px -1px #fff, -1px 1px #fff;
     text-align: center;
+    font-size: 50px;
 }
 
 p {
@@ -18,10 +21,10 @@ p {
     margin: 0 auto;
     width: 450px;
     height: 500px;
-
 }
 
-.View {
+
+.base {
     margin: auto;
     margin-left: 15px;
     background-color: white;
@@ -94,7 +97,7 @@ marquee {
 
 marquee>p {
     margin-top: 5px;
-    color: rgb(206, 55, 80);
+    color: red;
     font-size: 30px;
 }
 
@@ -115,12 +118,22 @@ img {
 body {
     width: 100%;
     height: 100%;
-    background-color: blue;
+    /* background-color: rgb(47, 47, 47); */
+    background-image: url("https://png.pngtree.com/png-clipart/20211025/original/pngtree-the-god-of-wealth-festival-congratulations-to-make-a-fortune-red-png-image_6880988.png");
 }
-
+header {
+    text-align: center;
+    background-color: black;
+    left: 0;
+    width: 100%;
+    text-align: center;
+}
 footer {
     text-align: center;
-    padding: 3px;
-    color: white;
-    display: block;
+    background-color: black;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
 }

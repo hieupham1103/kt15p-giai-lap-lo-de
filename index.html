@@ -9,55 +9,56 @@
     <script src="index.js"></script>
 </head>
 <body>
-    <marquee behavior="" direction="left">
-        <p>
-            Chào mừng bạn đến với website cờ bạc uy tín đến từ lớp 12 Tin - THPT Chuyên Lê Quý Đôn Khánh Hòa
-        </p>
-    </marquee>
+    <header>
+        <marquee behavior="" direction="left" style="">
+            <p>
+                Chào mừng bạn đến với website cờ bạc uy tín đến từ lớp 12 Tin - THPT Chuyên Lê Quý Đôn Khánh Hòa
+            </p>
+        </marquee>
+    </header>
     <div>
         <img src="images/dungnghienua.png" alt="" id="dungnghiennua" style="
             width: 500px;height: 500px;
             margin-left: auto;
             margin-right: auto;
             display: none;
+            border: solid black;
         ">
     </div>
-    <h1> MỜI BẠN XÓC </h1>
-    <div class="images">
-        <img src="images/muiten.gif" alt="">
-    </div>
-    <div class="grid-container">
-        <div>
-            <img src="images/hieu.png" alt="" class="img_left_right">
-        </div>
-        <div class="center">
-            <button class="button" onclick="dice();">XÓC ĐĨA </button>
-                <div class="View">
-                    <div class="dice">
-                        <iframe id="dice-1" src="" frameborder="0" style="width: 200px;height: 200px;">
+    <div style="margin-top:50px;">
+        <div class="grid-container">
+            <div>
+                <img src="images/hieu.png" alt="" class="img_left_right">
+            </div>
+            <div class="center">
+                <button class="button" onclick="dice();">XÓC ĐĨA </button>
+                    <div class="base">
+                        <div class="dice">
+                            <iframe id="dice-1" src="" frameborder="0" style="width: 200px;height: 200px;">
 
-                        </iframe>
+                            </iframe>
+                        </div>
+                        <div class="dice">
+                            <iframe id="dice-2" src="" frameborder="0" style="width: 200px;height: 200px;"> 
+                            </iframe>
+                        </div>
                     </div>
-                    <div class="dice">
-                        <iframe id="dice-2" src="" frameborder="0" style="width: 200px;height: 200px;"> 
-                        </iframe>
+                    <div class="taixiu">
+                        <div><iframe id="taixiu" src="" frameborder="0" style="width: 200px;height: 200px;"></iframe>
+                        </div>
                     </div>
-                </div>
-                <div class="taixiu">
-                    <div><iframe id="taixiu" src="" frameborder="0" style="width: 200px;height: 200px;"></iframe>
-                    </div>
-                </div>
-        </div>
-        <div>
-            <img src="images/son.png" alt="" class="img_left_right">
+            </div>
+            <div>
+                <img src="images/son.png" alt="" class="img_left_right">
+            </div>
         </div>
     </div>
+    <footer>
+        <marquee behavior="" direction="left">
+            <p>
+                Website này chỉ là bài kiểm tra 15 của học sinh, không phải website đánh bạc thật
+            </p>
+        </marquee>
+    </footer>
 </body>
-<footer>
-    <div>
-        <p>
-            Website này chỉ là bài kiểm tra 15 của học sinh, không phải website đánh bạc thật
-        </p>
-    </div>
-</footer>
 </html>
