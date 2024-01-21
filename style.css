@@ -1,0 +1,126 @@
+h1 {
+    font-family: Arial;
+    color: rgb(241, 20, 20);
+    text-align: center;
+}
+
+p {
+    font-family: Arial;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.center {
+    margin-top: 0px;
+    margin: 0 auto;
+    width: 450px;
+    height: 500px;
+
+}
+
+.View {
+    margin: auto;
+    margin-left: 15px;
+    background-color: white;
+    float: left;
+    width: 400px;
+    height: 190px;
+    border: 7px solid rgb(10, 10, 10);
+    border-radius: 10px 15px;
+    box-shadow: 5px 10px #930641;
+}
+
+.img_left_right{
+    border: solid black;
+    width: 228px;
+    height: 528px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.dice {
+    float: left;
+
+}
+
+.button {
+    font-family: Arial;
+    margin: auto;
+    width: 100px;
+    height: 50px;
+    margin-top: 0px;
+    border: 5px solid rgb(5, 5, 4);
+    font-size: medium;
+    border-radius: 10px 15px;
+    margin-left: 180px;
+    margin-bottom: 50px;
+    text-align: center;
+    background-color: pink;
+
+}
+
+.button:hover {
+    border: 7px solid red;
+    background-color: black;
+    color: palevioletred;
+    text-align: center;
+    box-shadow: 5px 8px #7a094b;
+
+
+}
+
+.taixiu {
+
+    width: 120px;
+    height: 100px;
+    border: 7px solid red;
+    border-radius: 10px 15px;
+    margin: auto;
+    box-shadow: 5px 10px #0a0909;
+    background-color: white;
+    margin-top: 230px;
+}
+
+
+marquee {
+    width: 100%;
+    height: 50px;
+    background-color: black;
+}
+
+marquee>p {
+    margin-top: 5px;
+    color: rgb(206, 55, 80);
+    font-size: 30px;
+}
+
+.images {
+    margin: 0 auto;
+    width: 60px;
+    height: 80px;
+
+}
+
+img {
+
+    margin: 0 auto;
+    width: 60px;
+    height: 80px;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    background-color: blue;
+}
+
+footer {
+    text-align: center;
+    padding: 3px;
+    color: white;
+    display: block;
+}
