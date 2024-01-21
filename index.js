@@ -27,3 +27,14 @@ function dice() {
 function change_img(element, src) {
     document.getElementById(element).src = src;
 }
+function change_bg(){
+    alert("đổi background");
+    var options = document.getElementById("bg-option").options;
+    if (options[0].selected == true) {
+        document.body.style.backgroundImage = "url('images/bg-1.png')";
+    }
+    else{
+        document.body.style.backgroundImage = "url('images/bg-2.png')";
+    }
+}
+    

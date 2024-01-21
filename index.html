@@ -9,7 +9,6 @@
     <script src="index.js"></script>
 </head>
 <body>
-    <div class="bg-image"></div>
     <header>
         <marquee behavior="" direction="left" style="">
             <p>
@@ -33,21 +32,25 @@
             </div>
             <div class="center">
                 <button class="button" onclick="dice();">XÓC ĐĨA </button>
-                    <div class="base">
-                        <div class="dice">
-                            <iframe id="dice-1" src="" frameborder="0" style="width: 200px;height: 200px;">
+                <select class="bg-option" id="bg-option" onchange="change_bg()">
+                    <option value="1">Background 1</option>
+                    <option value="2">Background 2</option>
+                </select>
+                <div class="base">
+                    <div class="dice">
+                        <iframe id="dice-1" src="" frameborder="0" style="width: 200px;height: 200px;">
 
-                            </iframe>
-                        </div>
-                        <div class="dice">
-                            <iframe id="dice-2" src="" frameborder="0" style="width: 200px;height: 200px;"> 
-                            </iframe>
-                        </div>
+                        </iframe>
                     </div>
-                    <div class="taixiu">
-                        <div><iframe id="taixiu" src="" frameborder="0" style="width: 200px;height: 200px;"></iframe>
-                        </div>
+                    <div class="dice">
+                        <iframe id="dice-2" src="" frameborder="0" style="width: 200px;height: 200px;"> 
+                        </iframe>
                     </div>
+                </div>
+                <div class="taixiu">
+                    <div><iframe id="taixiu" src="" frameborder="0" style="width: 200px;height: 200px;"></iframe>
+                    </div>
+                </div>
             </div>
             <div>
                 <img src="images/son.png" alt="" class="img_left_right">
