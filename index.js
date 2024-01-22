@@ -19,10 +19,10 @@ function dice() {
         return;
     }
     count_dice++;
-    if (count_dice >= limit_dice){
-        document.getElementById('dungnghiennua').style.display = "block";
-        alert("bạn đã chơi quá nhiều, nghỉ thôi :(")
-    }
+    // if (count_dice >= limit_dice){
+    //     document.getElementById('dungnghiennua').style.display = "block";
+    //     alert("bạn đã chơi quá nhiều, nghỉ thôi :(")
+    // }
     var b = random(6);
     var a = random(6);
     change_img("dice-1", "images/" + hinh[a]);
@@ -50,7 +50,7 @@ function dice() {
     
     console.log(cash)
     change_img("taixiu", "images/" + hinhTaiXiu[(a + b) % 2]);
-    document.getElementById("cash").innerHTML = cash
+    document.getElementById("cash").innerHTML = "$" + cash
 }
 
 function change_img(element, src) {
