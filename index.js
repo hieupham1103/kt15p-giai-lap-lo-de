@@ -11,7 +11,11 @@ function random(n){
 
 function dice() {
     if (value_check == "none"){
-        alert("bạn chưa chọn")
+        alert("bạn chưa chọn");
+        return;
+    }
+    if (cash <= 0){
+        alert("hết tiền rồi");
         return;
     }
     count_dice++;
