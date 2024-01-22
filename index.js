@@ -18,9 +18,8 @@ function dice() {
     var a = random(6);
     change_img("dice-1", "images/" + hinh[a]);
     change_img("dice-2", "images/" + hinh[b]);
-    var taixiu = Number((a + b) > 6);
     console.log(taixiu)
-    change_img("taixiu", "images/" + hinhTaiXiu[taixiu]);
+    change_img("taixiu", "images/" + hinhTaiXiu[(a + b) % 2]);
     
 }
 
