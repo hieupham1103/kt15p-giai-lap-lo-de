@@ -16,7 +16,7 @@
             </p>
         </marquee>
     </header>
-    <audio controls autoplay style="display: none;">
+    <audio loop autoplay>
         <source src="music.mp3" type="audio/mpeg">
     </audio>
     <div>
@@ -34,11 +34,24 @@
                 <img src="images/hieu.png" alt="" class="img_left_right">
             </div>
             <div class="center">
-                <button class="button" onclick="dice();">XÓC ĐĨA </button>
-                <select class="bg-option" id="bg-option" onchange="change_bg()">
-                    <option value="1">Background 1</option>
-                    <option value="2">Background 2</option>
-                </select>
+                <div style="display: flex;">
+                    <button class="button" onclick="dice();">XÓC ĐĨA </button>
+                    <p class="cash" id="cash">10</p>
+                </div>
+                <div style="margin-left: 100px; margin-top: 0">
+                    <ul>
+                        <li>
+                            <input type="checkbox" id="tai" onchange="tai_change()">
+                            <label for="tai">Tai</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="xiu" onchange="xiu_change()">
+                            <label for="xiu">Xiu</label>
+                        </li>
+                    </ul>
+
+                </div>
+                
                 <div class="base">
                     <div class="dice">
                         <iframe id="dice-1" src="" frameborder="0" style="width: 200px;height: 200px;">
@@ -54,6 +67,10 @@
                     <div><iframe id="taixiu" src="" frameborder="0" style="width: 200px;height: 200px;"></iframe>
                     </div>
                 </div>
+                <select class="bg-option" id="bg-option" onchange="change_bg()">
+                    <option value="1">Background 1</option>
+                    <option value="2">Background 2</option>
+                </select>
             </div>
             <div>
                 <img src="images/son.png" alt="" class="img_left_right">

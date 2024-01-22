@@ -22,7 +22,7 @@ p {
     margin-top: 0px;
     margin: 0 auto;
     width: 450px;
-    height: 500px;
+    height: 700px;
 }
 
 
@@ -52,7 +52,23 @@ p {
 
 }
 
+.cash{
+    /* display: inline; */
+    font-family: comic-sans;
+    margin: auto;
+    width: 100px;
+    height: 40px;
+    margin-top: 0px;
+    border: 5px solid rgb(5, 5, 4);
+    font-size: medium;
+    border-radius: 10px 15px;
+    margin-bottom: 50px;
+    text-align: center;
+    background-color: pink;
+}
+
 .button {
+    /* display: inline; */
     font-family: comic-sans;
     margin: auto;
     width: 100px;
@@ -61,7 +77,6 @@ p {
     border: 5px solid rgb(5, 5, 4);
     font-size: medium;
     border-radius: 10px 15px;
-    margin-left: 180px;
     margin-bottom: 50px;
     text-align: center;
     background-color: pink;
@@ -87,7 +102,7 @@ p {
     margin: auto;
     box-shadow: 5px 10px #0a0909;
     background-color: white;
-    margin-top: 230px;
+    margin-top: 350px;
 }
 
 .bg-option {
@@ -95,7 +110,7 @@ p {
     margin: auto;
     width: 200px;
     height: 50px;
-    margin-top: 0px;
+    margin-top: 30px;
     border: 5px solid rgb(5, 5, 4);
     font-size: medium;
     border-radius: 10px 15px;
@@ -129,6 +144,46 @@ img {
     margin: 0 auto;
     width: 60px;
     height: 80px;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    clear: both;
+}
+
+li{
+    list-style-type: none;
+    list-style-position: outside;
+    padding: 10px;
+    float: left;
+}
+
+input[type="checkbox"]:not(:checked), 
+input[type="checkbox"]:checked {
+    position: absolute;
+    left: -9999%;
+}
+
+input[type="checkbox"] + label {
+    display: inline-block;
+    font-family: comic-sans;
+    margin: auto;
+    width: 100px;
+    height: 50px;
+    margin-top: 0px;
+    border: 5px solid rgb(5, 5, 4);
+    font-size: medium;
+    border-radius: 10px 15px;
+    margin-bottom: 50px;
+    text-align: center;
+    background-color: pink;
+}
+
+input[type="checkbox"]:checked + label {
+    border: 1px solid white;
+    color: white;
+    background-color: black;
 }
 
 body {
