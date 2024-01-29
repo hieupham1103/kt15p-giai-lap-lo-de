@@ -30,21 +30,21 @@ function dice() {
     if (value_check == "tai"){
         if ((a + b) % 2 == 0){
             cash++;
-            alert("bạn đã thắng");
+            // alert("bạn đã thắng");
         }
         else{
             cash--;
-            alert("bạn đã thua");
+            // alert("bạn đã thua");
         }
     }
     else{
         if ((a + b) % 2 == 1){
             cash++;
-            alert("bạn đã thắng");
+            // alert("bạn đã thắng");
         }
         else{
             cash--;
-            alert("bạn đã thua");
+            // alert("bạn đã thua");
         }
     }
     
