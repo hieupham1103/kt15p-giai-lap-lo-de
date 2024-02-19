@@ -91,3 +91,14 @@ function xiu_change(){
     }
 }
     
+var showtaicheck = false
+function showtai(){
+    if (showtaicheck){
+        document.getElementById("taixoay").style.display = "none";
+        showtaicheck = false;
+    }
+    else{
+        document.getElementById("taixoay").style.display = "block";
+        showtaicheck = true;
+    }
+}

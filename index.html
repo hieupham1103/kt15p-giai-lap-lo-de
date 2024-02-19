@@ -17,7 +17,7 @@
         <source src="music.mp3" type="audio/mpeg">
     </audio>
     <div style = "text-align: center;">
-        <img src="./images/khanhtai.png" alt="" style="width: 150px; height: 300px; transform: rotate(80deg);" id="taixoay">
+        <img src="./images/khanhtai.png" alt="" style="width: 150px; height: 300px; transform: rotate(80deg); display: none;" id="taixoay">
     </div>
     <div>
         <img src="images/dungnghienua.png" alt="" id="dungnghiennua" style="
@@ -36,6 +36,7 @@
             <div class="center">
                 <div style="display: flex;">
                     <button class="button" onclick="dice();">XÓC ĐĨA </button>
+                    <button class="button" onclick="showtai();"> Tài Xoay </button>
                     <p class="cash" id="cash">$2</p>
                 </div>
                 <div style="margin-left: 95px; margin-top: -30px">
