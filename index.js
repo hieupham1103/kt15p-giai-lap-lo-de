@@ -3,19 +3,21 @@ var hinh = new Array("1.png", "2.png", "3.png", "4.png", "5.png", "6.png");
 var hinhTaiXiu = new Array("tai.png", "xiu.png");
 var count_dice = 0;
 const limit_dice = 5;
-var cash = 10;
+var cash = 2;
 
 function random(n){
     return Math.floor(Math.random() * n);
 }
 
 function dice() {
+    var rotated = document.getElementById("taixoay");
+    rotated.style.transform = "rotate(" + String(90 - cash * 5) + "deg)";
     if (value_check == "none"){
         alert("bạn chưa chọn");
         return;
     }
     if (cash <= 0){
-        alert("hết tiền rồi");
+        alert("Tài đã xỉu");
         return;
     }
     count_dice++;
