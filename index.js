@@ -4,6 +4,7 @@ var hinhTaiXiu = new Array("tai.png", "xiu.png");
 var count_dice = 0;
 const limit_dice = 5;
 var cash = 2;
+var delta_deg = 5;
 
 function random(n){
     return Math.floor(Math.random() * n);
@@ -11,7 +12,7 @@ function random(n){
 
 function dice() {
     var rotated = document.getElementById("taixoay");
-    rotated.style.transform = "rotate(" + String(90 - cash * 5) + "deg)";
+    rotated.style.transform = "rotate(" + String(90 - cash * delta_deg) + "deg)";
     if (value_check == "none"){
         alert("bạn chưa chọn");
         return;
